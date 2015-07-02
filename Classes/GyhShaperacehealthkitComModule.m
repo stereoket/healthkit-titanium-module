@@ -367,7 +367,7 @@ struct stepsResults{
     
     HKQuantity* burned = [HKQuantity quantityWithUnit:[HKUnit kilocalorieUnit] doubleValue:cals];
     HKQuantity* distance = [HKQuantity quantityWithUnit:[HKUnit meterUnit] doubleValue: dist];
-    HKWorkout* workout = [HKWorkout workoutWithActivityType:[props objectForKey:@"HKWorkoheutActivityType"]
+    HKWorkout* workout = [HKWorkout workoutWithActivityType:[props objectForKey:@"HKWorkoutActivityType"]
                                                   startDate:[self NSDateFromCustomJavaScriptDateString:[props objectForKey:@"startDate"]]
                                                     endDate:[self NSDateFromCustomJavaScriptDateString:[props objectForKey:@"endDate"]]
                                                    duration:[[NSDate date] timeIntervalSinceNow]
